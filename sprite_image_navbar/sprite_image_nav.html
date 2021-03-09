@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			width: 500px;
+			height: 35px;
+			margin: 50px auto;
+			border: 1px solid #efefef;
+			position: relative;
+		}
+
+		.container ul li {
+			list-style: none;
+			float: left;
+			height: 35px;
+			width: 99px;
+			line-height: 35px;
+			text-align: center;
+			border-right: 1px dotted #efefef;
+		}
+
+		.container ul li a {
+			display: block;
+			text-decoration: none;
+			color: gray;
+			padding-left: 30px;
+			background: url(./sprite.png) no-repeat;
+			transition: all .5s;
+		}
+
+		.container ul li:nth-of-type(1) a {
+			background-position: 14px 11px;
+		}
+
+		.container ul li:nth-of-type(1):hover a {
+			background-position: 14px -18px;
+			color: green;
+		}
+
+		.container ul li:nth-of-type(2) a {
+			background-position: 14px -48px;
+		}
+
+		.container ul li:nth-of-type(2):hover a {
+			background-position: 14px -79px;
+			color: green;
+		}
+
+		.container ul li:nth-of-type(3) a {
+			background-position: 14px -109px;
+		}
+
+		.container ul li:nth-of-type(3):hover a {
+			background-position: 14px -136px;
+			color: green;
+		}
+
+		.container ul li:nth-of-type(4) a {
+			background-position: 14px -168px;
+		}
+
+		.container ul li:nth-of-type(4):hover a {
+			background-position: 14px -200px;
+			color: green;
+		}
+
+		.container ul li:nth-of-type(5) a {
+			background-position: 14px -232px;
+		}
+
+		.container ul li:nth-of-type(5):hover a {
+			background-position: 14px -261px;
+			color: green;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">News</a></li>
+			<li><a href="">Movies</a></li>
+			<li><a href="">Series</a></li>
+			<li><a href="">Fiction</a></li>
+		</ul>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style:none;
+}
+a{
+  text-decoration:none;
+}
+img {
+  border:none;
+}
+
+/*top*/
+#top {
+  height: 34px;
+  background: url(./top-1.png) repeat-x;
+  /*border: 1px solid red;*/
+  text-align: right;
+}
+#top p {
+  width: 950px;
+  margin: 0 auto;
+  /*background: #848484;*/
+  line-height: 30px;
+  font-size: 18px;
+  color: #333;
+}
+#top img {
+  height: 18px;
+  vertical-align: top;
+  padding-top: 7px;
+  padding-right: 5px;
+}
+
+/*nav*/
+#nav {
+  width: 950px; height: 100px;
+  /*background: #f00;*/
+  margin: 0 auto;
+}
+#nav .logo {
+  float: left;
+  padding-top: 34px;
+  padding-right: 91px;
+}
+#nav ul li {
+  float: left;
+  font-size: 12px;
+  color: #1d1c1c;
+  padding-top: 48px;
+  /*border: 1px solid black;*/
+}
+#nav ul li a {
+  color: #666;
+  width: 80px;
+  float: left;
+  text-align: center;
+  padding-bottom: 16px;
+}
+#nav ul li a:hover {
+  border-bottom: 3px solid black;
+  color:#000;
+}
+/*banner*/
+#banner img {
+  width: 100%;
+  display: block;
+}
+
+/*main*/
+#main {
+  width: 950px;
+  margin: 0 auto;
+}
+/*link*/
+#link {
+  height: 233px;
+  /*background: #ff0;*/
+  overflow: hidden;
+}
+#link ul {
+  padding: 44px 35px;
+  width: 962px;
+}
+#link ul li {
+  float: left;
+  margin-right: 82px;
+}
+#link ul li a img{
+  width: 110px;
+}
+
+
+/*case*/
+#case {
+  height: 446px;
+  /*background: #f0f;*/
+  /*border: 1px solid #00ff00;*/
+}
+#case h3 {
+  height: 50px;
+  background: url(./case-title.png) repeat-x;
+  color: #f00;
+  font-size: 34px;
+  line-height: 34px;
+  text-align: center;
+}
+#case ul {
+  padding-top:38px;
+  display: flex;
+  justify-content: space-around;
+}
+#case ul li {
+  float: left;
+  margin-right: 20px;
+}
+#case ul li a img {
+  width: 170px;
+}
+#case ul li:nth-of-type(5) {
+  margin-right: 0;
+}
+#case ul li:nth-of-type(5) a img {
+  width: 178px;
+}
+
+/*about*/
+#about {
+  height: 250px;
+  /*background: #0ff;*/
+}
+#about h3, #process h3 {
+  height: 50px;
+  background: url(./case-title.png) repeat-x;
+  color: #f00;
+  font-size: 34px;
+  line-height: 34px;
+  text-align: center;
+}
+#about h3 b, #process b {
+  color: #f00;
+}
+#about h3 strong, #process strong{
+  color: #fff;
+}
+#about h3 span, #process h3 span {
+  display: block;
+  width: 76px;
+  font-size: 12px;
+  line-height: 16px;
+  background: #fff;
+  margin: 0 auto;
+  color: #30353a;
+}
+#about h4{
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 30px;
+}
+#about p{
+  text-align: center;
+  font-size: 13px;
+  line-height: 27px;
+}
+#about p a{
+  color: #666;
+}
+
+/*process*/
+#process {
+  height: 245px;
+  /*background: #00f;*/
+}
+#process p{
+  text-align: center;
+  padding-top: 42px;
+  font-size: 12px;
+  color: #666;
+}
+#process p img {
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+#process p .arrow {
+  width: 15px;
+  margin: 0 5px;
+}
+
+/*bottom*/
+#bottom {
+  height: 89px;
+  background: #eaeaea;
+  border-top: 1px solid #b4b4b4;
+  text-align: center;
+  font-size: 12px;
+  line-height: 22px;
+  padding-top: 28px;
+}
+#bottom a {
+  color: #000;
+}
+#bottom span {
+  margin: 0 5px;
+}

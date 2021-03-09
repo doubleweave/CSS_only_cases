@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>vertical</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .listbox {
+      width: 500px;
+      height: 400px;
+      margin: 50px auto;
+      overflow:hidden;
+    }
+
+    .listbox .list a {
+      display: block;
+      height: 35px;
+      line-height: 35px;
+      text-decoration: none;
+      background: linear-gradient(#cecece, #8f8f8f);
+      padding-left: 12px;
+      border-radius: 5px;
+      color: #424242;
+    }
+    .listbox .list a:hover, .list:target a {
+      background: linear-gradient(#eee, #2288dd);
+    }
+    .listbox .list:target span {
+      border-top: 5px solid transparent;
+      border-left: 5px solid white;
+      border-top: 5px solid transparent;
+      border-top: 5px solid transparent;
+      right: 10px;
+      top: 10px;
+    }
+
+    .listbox .list p {
+      height: 0;
+      overflow: auto;
+      padding-left: 10px;
+      margin: 5px 0;
+      transition: all 0.5s;
+    }
+    .listbox .list:target p{
+      height: 100px;
+    }
+
+    .listbox .list {
+      position: relative;
+    }
+
+    .listbox .list span {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-top: 5px solid white;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+  </style>
+</head>
+<body>
+<div class="listbox">
+  <div class="list" id="listbrand">
+    <a href="#listbrand">Brand</a>
+    <p>nd kittens are naturally inquisitive and affectionate animals that make wonderful pets
+      By adopting a cat or kitten from RSPCA, you’re giving an animal in need a second chance at life.
+      And your new furry best friend will reward you with devotion, unconditional love and joy kittens are naturally
+      inquisitive and affectionate animals that make wonderful pets
+      By adopting a cat or kitten from RSPCA, you’re giving an animal in need a second chance at life.
+      And your new furry best friend will reward you with devotion, unconditional love kittens are naturally inquisitive
+      and affectionate animals that make wonderful pets
+      By adopting a cat or kitten from RSPCA, you’re giving an animal in need a second chance at life.
+      And your new furry best friend will reward you with devotion, unconditional love.
+      As an added benefit, all cats and kittens available for adoption from RSPCA South Australia ar</p>
+    <span></span>
+  </div>
+  <div class="list" id="listProm">
+    <a href="#listProm">Promition</a>
+    <p>I in a financial position to meet the ongoing costs of caring for a cat?
+      Do I have an environment to ensure kittens are naturally inquisitive and affectionate animals that make wonderful
+      pets
+      By adopting a cat or kitten from RSPCA, you’re giving an animal in need a second chance at life.
+      And your new furry best friend will reward you with devotion, unconditional love kittens are naturally inquisitive
+      and affectionate animals that make wonderful pets
+      By adopting a cat or kitten from RSPCA, you’re giving an animal in need a second chance at life.
+      And your new furry best friend will reward you with devotion, unconditional lovea cat is safe and secure at all
+      times?
+      Does my current lifestyle allow me</p>
+    <span></span>
+  </div>
+  <div class="list" id="listEvent">
+    <a href="#listEvent">Event</a>
+    <p>Water and food bowls
+      Kitten, adult or senior cat food kittens are naturally inquisitive and affectionate animals that make wonderful
+      pets
+      By adopting a cat or kitten from RSPCA, you’re giving an animal in need a second chance at life.
+      And your new furry best friend will reward you with devotion, unconditional love kittens are naturally inquisitive
+      and affectionate animals that make wonderful pets
+      By adopting a cat or kitten from RSPCA, you’re giving an animal in need a second chance at life.
+      And your new furry best friend will reward you with devotion, unconditional love (we recommend Hill’s Pet
+      Nutrition)
+      Litter tray, litter and scooper
+      Comfortable bedding
+      Basket
+      Scratching post
+      Toys and balls </p>
+    <span></span>
+  </div>
+</div>
+</body>
+</html>

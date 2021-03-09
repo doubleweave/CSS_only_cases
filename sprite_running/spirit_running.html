@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.box {
+			width: 52px;
+			height: 86px;
+			background: url(./running-sprite-image.png) 0 0;
+			margin: 10px auto;
+			animation: person 1.5s step-end infinite;
+		}
+		@keyframes person {
+			0% {background-position: 0 0;}
+			12.5% {background-position: -63px 0px;}
+			25% {background-position: -133px 0px;}
+			37.5% {background-position: -188px 0px;}
+			50% {background-position: 0px -104px;}
+			62.5% {background-position: -63px -104px;}
+			75% {background-position: -133px -104px;}
+			87.5% {background-position: -188px -104px;}
+			100% {background-position: 0 0;}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+	</div>
+</body>
+</html>

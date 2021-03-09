@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>css-mirror-flip</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: red;
+      margin: 10px auto;
+      position: relative;
+    }
+    .box p {
+      width: 150px; height: 150px;
+      border: 25px solid rgba(255,255,255,0.5);
+      background: url("./city.jpg");
+      background-origin: border-box;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 1;
+      transform-origin: left center;
+      transition: 1s;
+    }
+    .box h3 {
+      width: 200px; height: 200px;
+      background: #000;
+      color: #fff;
+      border-radius: 50%;
+      line-height: 200px;
+      text-align: center;
+      font-size: 50px;
+      position: absolute;
+    }
+    .box:hover p {
+      transform: rotateY(-180deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p></p>
+    <h3>Text</h3>
+  </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>auto_width_navbar</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		li {list-style:none;}
+		a{text-decoration: none;}
+		.box {
+			height: 110px;
+			background: #fff;
+		}
+		.box ul li{
+			float: left;
+			margin: 5px 10px;
+		}
+		.box ul li a {
+			text-align: center;
+			height: 100px;
+			display: block;
+			line-height: 100px;
+			color: #000;
+			margin-left: 12px;
+			padding-right: 12px;
+		}
+		.box ul li:hover {
+			background: url(./slider-left-box.png) no-repeat;
+		}
+		.box ul li:hover a{
+			background: url(./slider-right-box.png) no-repeat right bottom;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">ProductProductProductProduct</a></li>
+			<li><a href="">Service</a></li>
+			<li><a href="">Contact us</a></li>
+		</ul>
+	</div>
+</body>
+</html>

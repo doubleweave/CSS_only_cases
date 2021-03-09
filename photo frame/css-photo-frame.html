@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>css-photo-frame</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .listbox {
+      width: 620px;
+      margin: 50px auto;
+    }
+    .listbox h3 {
+      font-size: 17px;
+      color: #a53333;
+      text-align: center;
+      border-bottom: 1px dashed #ccc;
+      font-weight: 300;
+      padding-bottom: 5px;
+    }
+    .listbox .list .pic img {
+      width: 100px; height: 75px;
+      border: 1px solid #ccc;
+      padding: 2px;
+      background: #fff;
+      display: block;
+    }
+    .listbox .list {
+      margin-top: 10px;
+    }
+    .listbox .list .pic {
+      width: 106px;
+      padding: 5px;
+      border: 1px solid #bbb;
+      background: #eee;
+      float: left;
+      margin: 3px;
+      position: relative;
+    }
+    .listbox .list .pic img:nth-of-type(2) {
+      width: 200px; height: 150px;
+      position: absolute;
+      left: -50px;
+      top: -38px;
+      display: none;
+      z-index: 1;
+    }
+    .listbox .list .pic:hover img:nth-of-type(2) {
+      display: block;
+      border-color: #000;
+    }
+    .listbox .list .clear{
+      clear:both;
+    }
+    .listbox p {
+      text-align: center;
+      font-size:12px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+<div class="listbox">
+  <h3>Hoverbox Image Gallery</h3>
+  <div class="list">
+    <div class="pic">
+      <img src="./sky.jpg">
+      <img src="./sky.jpg">
+    </div>
+    <div class="pic">
+      <img src="./city.jpg">
+      <img src="./city.jpg">
+    </div>
+    <div class="pic">
+      <img src="./fly.jpg">
+      <img src="./fly.jpg">
+    </div>
+    <div class="pic">
+      <img src="./ting.jpg">
+      <img src="./ting.jpg">
+    </div>
+    <div class="pic">
+      <img src="./icon-a.jpg">
+      <img src="./icon-a.jpg">
+    </div>
+    <div class="pic">
+      <img src="./icon-b.jpg">
+      <img src="./icon-b.jpg">
+    </div>
+    <div class="pic">
+      <img src="./icon-back.jpg">
+      <img src="./icon-back.jpg">
+    </div>
+    <p class="clear"></p>
+  </div>
+  <p>
+    XHTML CSS 508 | Hoverbox by XXX. | Read the Detail
+  </p>
+</div>
+</body>
+</html>

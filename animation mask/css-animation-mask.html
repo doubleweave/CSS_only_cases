@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>animation mask</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      width: 400px; height: 600px;
+      margin: 20px auto;
+      background: url(./shake-hands.jpg) center;
+      color: #3096d4;
+      font-size: 30px;
+      position: relative;
+      overflow:hidden;
+    }
+    .box #leftCircle {
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: #3096d4;
+      position: absolute;
+      left: -300px;
+      top: 200px;
+      transition: all 1s;
+    }
+    .box:hover #leftCircle {
+      position: absolute;
+      left: 100px;
+      top: 200px;
+    }
+    .box #rightImage {
+      width: 100px; height: 100px;
+      position: absolute;
+      left: 450px;
+      top: 250px;
+      transition: all 1s;
+    }
+    .box:hover #rightImage {
+      position: absolute;
+      left: 150px;
+      top: 250px;
+    }
+    .box h3 {
+      text-align: center;
+      height: 35px;
+      line-height: 35px;
+      /* border: 1px solid red; */
+      position: absolute;
+      left: 58px;
+      top: -100px;
+      transition: all 1s;
+    }
+    .box:hover h3 {
+      position: absolute;
+      left: 58px;
+      top: 100px;
+    }
+    .box .bg{
+      position:absolute;
+      left:0;
+      top:0;
+      width: 400px; height: 600px;
+      opacity: 0;
+      /* border: 1px solid red; */
+      transition: all 1s;
+    }
+    .box:hover .bg{
+      opacity: 0.3;
+      background: black;
+    }
+  </style>
+</head>
+<body>
+<div class="box">
+  <h3>Business consulting</h3>
+  <img src="">
+  <div id="leftCircle"></div>
+  <img id="rightImage" src="./magnifier.png">
+  <p class="bg"></p>
+</body>
+</html>

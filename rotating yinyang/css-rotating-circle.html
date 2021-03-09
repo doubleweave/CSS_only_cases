@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>rotating</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .circle {
+      width: 300px; height: 300px;
+      margin: 100px auto;
+      border-radius: 50%;
+      position: relative;
+      animation: move 2s infinite linear;
+    }
+    .circle .circleblack {
+      width: 300px; height:300px;
+      border-radius: 50%;
+      background: black;
+    }
+    .circle .circlewhite{
+      position: absolute;
+      left: 150px;
+      top: 0;
+      width: 150px; height: 300px;
+      border-top-right-radius: 150px;
+      border-bottom-right-radius: 150px;
+      background: white;
+    }
+    .circle .smallblack {
+      position: absolute;
+      left: 75px;
+      top: 0;
+      width: 150px; height: 150px;
+      border-radius: 50%;
+      background: black;
+    }
+    .circle .smallwhite {
+      position: absolute;
+      left: 75px;
+      bottom:0;
+      width: 150px; height: 150px;
+      border-radius: 50%;
+      background: white;
+    }
+    .circle .smallwhitecircle {
+      position: absolute;
+      left: 118px;
+      top: 37px;
+      width: 75px; height: 75px;
+      border-radius: 50%;
+      background: white;
+    }
+    .circle .smallblackcircle {
+      position: absolute;
+      left: 118px;
+      bottom: 37px;
+      width: 75px; height: 75px;
+      border-radius: 50%;
+      background: black;
+    }
+    @keyframes move {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+    }
+  </style>
+</head>
+<body>
+<div class="circle">
+  <div class="circleblack"></div>
+  <div class="circlewhite"></div>
+  <div  class="smallwhite"></div>
+  <div class="smallblack"></div>
+  <div class="smallblackcircle"></div>
+  <div class="smallwhitecircle"></div>
+</div>
+</body>
+</html>

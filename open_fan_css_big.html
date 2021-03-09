@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>big fan</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		html {
+			background: #efefef;
+		}
+		.container {
+			width: 1200px;
+			height: 600px;
+			margin: 0 auto;
+			position: relative;
+		}
+		.container span {
+			display: block;
+			width: 100px;
+			height: 600px;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -50px;
+			transition: all 0.5s;
+			transform-origin: center bottom;
+			opacity: 0;
+		}
+		.container .block1 {opacity: 1; background: red;}
+		.container .block2 {background: orange;}
+		.container .block3 {background: yellow;}
+		.container .block4 {background: green;}
+		.container .block5 {background: skyblue;}
+		.container .block6 {background: blue;}
+		.container .block7 {background: purple;}
+		.container .block8 {background: pink;}
+		.container .block9 {background: gray;}
+		.container .block10 {background: tomato;}
+		.container .block11 {background: gold;}
+		.container .block12 {background: brown;}
+		.container .block13 {background: cyan;}
+		.container:hover .block2 {transform: rotate(15deg); opacity: 1;}
+		.container:hover .block3 {transform: rotate(30deg); opacity: 1;}
+		.container:hover .block4 {transform: rotate(45deg); opacity: 1;}
+		.container:hover .block5 {transform: rotate(60deg); opacity: 1;}
+		.container:hover .block6 {transform: rotate(75deg); opacity: 1;}
+		.container:hover .block7 {transform: rotate(90deg); opacity: 1;}
+		.container:hover .block8 {transform: rotate(-75deg); opacity: 1; z-index: -1;}
+		.container:hover .block9 {transform: rotate(-60deg); opacity: 1; z-index: -2;}
+		.container:hover .block10 {transform: rotate(-45deg); opacity: 1; z-index: -3;}
+		.container:hover .block11 {transform: rotate(-30deg); opacity: 1; z-index: -4;}
+		.container:hover .block12 {transform: rotate(-15deg); opacity: 1; z-index: -5;}
+		.container:hover .block13 {transform: rotate(-90deg); opacity: 1; z-index: -6;}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<span class="block1"></span>
+		<span class="block2"></span>
+		<span class="block3"></span>
+		<span class="block4"></span>
+		<span class="block5"></span>
+		<span class="block6"></span>
+		<span class="block7"></span>
+		<span class="block8"></span>
+		<span class="block9"></span>
+		<span class="block10"></span>
+		<span class="block11"></span>
+		<span class="block12"></span>
+		<span class="block13"></span>
+	</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>hover to change</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		li {list-style: none;}
+		a{text-decoration: none;}
+		.box {
+			margin: 10px auto;
+			height: 40px;
+			border-bottom: 1px solid #000;
+		}
+		.box ul {
+			padding: 0 10px;
+		}
+		.box ul li {
+			float: left;
+		}
+		.box ul li a {
+			display: block;
+			height: 35px;
+			border: 1px solid #f00;
+			border-bottom: none;
+			margin-top: 4px;
+			line-height: 35px;
+			text-align: center;
+			color: #96999c;
+			background: #f7f7f7;
+			margin-right: 9px;
+			padding: 0 14px;
+		}
+		.box ul li a:hover {
+			border: 1px solid #000;
+			background: #fff;
+			color: #000;
+			border-bottom: none;
+			height: 40px;
+			margin-top: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul>
+			<li><a href="">One</a></li>
+			<li><a href="">Two</a></li>
+			<li><a href="">Three</a></li>
+			<li><a href="">Four</a></li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			width: 300px;
+			height: 300px;
+			margin: 5px auto;
+			border-radius: 50%;
+			position: relative;
+		}
+		.container p {
+			z-index: 1;
+			background: url(./city.jpg);
+			width: 260px;
+			height: 260px;
+			border: 20px solid rgba(255,255,255,.5);
+			border-radius: 50%;
+			background-origin: border-box;
+			position: absolute;
+			transition: all 1s;
+			transform-origin: right center;
+		}
+		.container h1 {
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			border-radius: 50%;
+			background: #000;
+			color: #fff;
+			font-size: 80px;
+			text-align: center;
+			line-height: 300px;
+		}
+		.container:hover p {
+			transform: rotate(-90deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<p></p>
+		<h1>Text</h1>
+	</div>
+</body>
+</html>
